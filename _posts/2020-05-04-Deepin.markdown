@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Deepin"
+date:   2020年05月04日17:02:55
+categories: mediator feature
+tags: featured
+image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
+image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
+---
 # Deepin安装
 ## 进入系统后一直加载
 ### 第一次安装临时解决方案
