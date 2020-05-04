@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-gem 'jekyll'
-gem 'jekyll-sitemap'
-gem 'jekyll-feed'
-gem "jekyll-gist"
+
+# 'github-pages' includes 'jekyll' gem 
+gem 'github-pages'
+gem 'bourbon'
+gem 'jemoji'
