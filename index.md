@@ -1,10 +1,10 @@
 ---
 layout: home
 ---
-# About Theme
+# 关于本站
 
-This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)).
+你看的内容是对我个人 [学习笔记](https://github.com/Nandem/NoteBook) 的美化。
 
-To learn how to install and use this theme check out the [installation guide](http://taylantatli.me/Halve/halve-theme/) for more information.
-
-If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/TaylanTatli/Halve/issues/new).
+使用的搭建方式是[GitHub Pages](https://pages.github.com/)。
+我使用的主题是[Halve](http://taylantatli.me/Halve/halve-theme/)。
+主题来自[jekyllthemes.org/](http://jekyllthemes.org/page9/)。
