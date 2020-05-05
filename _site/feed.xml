@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-05T12:49:03+08:00</updated><id>http://localhost:4000/</id><title>摸猫鼻子吗</title><subtitle>向来心是看客心，奈何人是剧中人。</subtitle><entry><title>Windows About</title><link href="http://localhost:4000/WindowsBlaBlaBla/" rel="alternate" type="text/html" title="Windows About" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/WindowsBlaBlaBla</id><content type="html" xml:base="http://localhost:4000/WindowsBlaBlaBla/">&lt;h1 id=&quot;无法安装&quot;&gt;无法安装&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;修复计算机=&amp;gt;命令行&lt;/li&gt;
+  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;diskpart&lt;/code&gt;进入diskpart模式&lt;/li&gt;
+  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;list disk&lt;/code&gt;，眼睛亮一点，确定哪个是你的硬盘&lt;/li&gt;
+  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;select disk 编号&lt;/code&gt;选择你的硬盘&lt;/li&gt;
+  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;clean&lt;/code&gt;清除硬盘&lt;/li&gt;
+  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;convert gpt&lt;/code&gt;转成gpt格式&lt;/li&gt;
+  &lt;li&gt;退出重启，应该就可以了
+    &lt;blockquote&gt;
+      &lt;p&gt;diskpart用处很多，比如格式化硬盘和U盘等。最zhuangbility的就是通过它来分区，而不是使用各种分区软件&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;安装clion&quot;&gt;安装CLion&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;下载安装Clion&lt;/li&gt;
+  &lt;li&gt;下载Mingw-64 installer&lt;/li&gt;
+  &lt;li&gt;配置&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;nodejs无法安装依赖&quot;&gt;NodeJS无法安装依赖&lt;/h1&gt;
+&lt;h2 id=&quot;可能原因&quot;&gt;可能原因：&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;权限&lt;/li&gt;
+  &lt;li&gt;cnpm的问题，换成npm&lt;/li&gt;
+&lt;/ul&gt;</content><category term="windows" /><summary>无法安装
+
+  修复计算机=&amp;gt;命令行
+  输入diskpart进入diskpart模式
+  输入list disk，眼睛亮一点，确定哪个是你的硬盘
+  输入select disk 编号选择你的硬盘
+  输入clean清除硬盘
+  输入convert gpt转成gpt格式
+  退出重启，应该就可以了
+    
+      diskpart用处很多，比如格式化硬盘和U盘等。最zhuangbility的就是通过它来分区，而不是使用各种分区软件</summary></entry><entry><title>Ubuntu</title><link href="http://localhost:4000/UbuntuBlaBlaBla/" rel="alternate" type="text/html" title="Ubuntu" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/UbuntuBlaBlaBla</id><content type="html" xml:base="http://localhost:4000/UbuntuBlaBlaBla/">&lt;h1 id=&quot;查看系统架构&quot;&gt;查看系统架构&lt;/h1&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uname &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#几乎所有 Linux/Unix 系统&lt;/span&gt;
+dpkg &lt;span class=&quot;nt&quot;&gt;--print-architecture&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#只适用于基于 Debian 和 Ubuntu 的 Linux 发行版&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;启动图形界面以便设置软件源&quot;&gt;启动图形界面以便设置软件源&lt;/h1&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-manager &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;shadowsocks配置&quot;&gt;shadowsocks配置&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;下载github上的&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-qt5&quot;&gt;ShadowSocks&lt;/a&gt;，格式为APPImage，右键-&amp;gt;properties-&amp;gt;permissions-&amp;gt;Allow executing file as program，双击即可运行。&lt;/li&gt;
+  &lt;li&gt;设置系统代理为Manual，Socks Host为127.0.0.1:1080（1080为ss中设置的本地端口号），其余默认。&lt;/li&gt;
+  &lt;li&gt;重启生效。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;查看系统架构类型&quot;&gt;查看系统架构类型&lt;/h1&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uname &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#几乎所有 Linux/Unix 系统适用&lt;/span&gt;
+dpkg &lt;span class=&quot;nt&quot;&gt;--print-architecture&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#只适用于基于 Debian 和 Ubuntu 的 Linux 发行版&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;中文输入法&quot;&gt;中文输入法&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Ctrl + Alt + T打开终端，输入fcitx检查是否安装fcitx，若没有则根据提示进行安装，否则进行2。&lt;/li&gt;
+  &lt;li&gt;系统设置-&amp;gt;Region &amp;amp; Language-&amp;gt;Manage Installed Languages-&amp;gt;Keyboard input method system-&amp;gt;fcitx。&lt;/li&gt;
+  &lt;li&gt;（可选）此时重启系统发现已经有默认的中文输入法。但想要安装sougou的话需要去官网下载安装包并双击安装，之后点击小键盘选择搜狗输入法。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;命令行安装oracle-jdk&quot;&gt;命令行安装oracle-jdk&lt;/h1&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository ppa:webupd8team/java
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install oracle-java8-installer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;命令行安装intellij-idea&quot;&gt;命令行安装IntelliJ IDEA&lt;/h1&gt;
+&lt;h4 id=&quot;安装-intellij-idea-community版本&quot;&gt;安装 INTELLIJ IDEA COMMUNITY版本：&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;snap install intellij-idea-community &lt;span class=&quot;nt&quot;&gt;--classic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--edge&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;安装intellij-idea-ultimate版本&quot;&gt;安装INTELLIJ IDEA ULTIMATE版本：&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;snap install intellij-idea-ultimate &lt;span class=&quot;nt&quot;&gt;--classic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--edge&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;安装android-studio&quot;&gt;安装Android Studio&lt;/h1&gt;
+&lt;p&gt;下载&lt;a href=&quot;https://developer.android.google.cn/studio/&quot;&gt;Android Studio&lt;/a&gt;
+移动到软件文件夹&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;mv android-studio-ide-xxx.xxxxxxx-xxx.zip /opt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;解压&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;unzip android-studio-ide-xxx.xxxxxxx-xxx.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;安装clion&quot;&gt;安装CLion&lt;/h1&gt;
+&lt;h4 id=&quot;先导工作&quot;&gt;先导工作&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install g++ &lt;span class=&quot;c&quot;&gt;##安装g++编译器&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install make &lt;span class=&quot;c&quot;&gt;##make工具&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install cmake &lt;span class=&quot;c&quot;&gt;##安装cmake工具&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install bison 
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install libncurses5-dev
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install kdelibs5-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;下载&lt;a href=&quot;https://www.jetbrains.com/clion/download/&quot;&gt;CLion&lt;/a&gt;。
+移动到自己的软件文件夹&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;mv Clion-xxxx.x.tar.gz /opt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;进入软件文件夹并解压&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /opt
+&lt;span class=&quot;nb&quot;&gt;sudo tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zxvf&lt;/span&gt; CLion-xxxx.x.tar.gz  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;启动&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;clion-xxxx.x/bin/  
+./clion.sh  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;选择cmake路径，ok！&lt;/p&gt;
+
+&lt;h1 id=&quot;jetbrains系列ide破解&quot;&gt;JetBrains系列IDE破解&lt;/h1&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;vim /etc/hosts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;加入“0.0.0.0 account.jetbrains.com”
+保存（若忘了sudo打开导致权限不足又不想sudo重新打开，使用“&lt;strong&gt;:w !sudo tee %&lt;/strong&gt;”，注意空格）
+百度搜Idea注册码，复制粘贴即可。&lt;/p&gt;
+
+&lt;h1 id=&quot;安装nodejs&quot;&gt;安装Node.js&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;下载&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;移动到自己的软件文件夹，如&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo mv node-vx.xx.x-linex-64.tar.xz&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;解压&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo tar -xJf node-vx.xx.x-linex-64.tar.xz&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;安装npm和node命令到系统命令
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ln &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /opt/node-vx.xx.x-linex-64/bin/node /usr/local/bin/node &lt;span class=&quot;c&quot;&gt;#node命令&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ln &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /opt/node-vx.xx.x-linex-64/bin/npm /usr/local/bin/npm &lt;span class=&quot;c&quot;&gt;#npm命令&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;验证是否安装成功，分别输入&lt;code class=&quot;highlighter-rouge&quot;&gt;node -v&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;npm -v&lt;/code&gt;&lt;/p&gt;
+    &lt;h4 id=&quot;设置淘宝镜像&quot;&gt;设置淘宝镜像&lt;/h4&gt;
+    &lt;p&gt;终端输入&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g cnpm --registry=https://registry.npm.taobao.org&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;安装nvm&quot;&gt;安装nvm&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget &lt;span class=&quot;nt&quot;&gt;-qO-&lt;/span&gt; https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;安装gradle&quot;&gt;安装Gradle&lt;/h1&gt;
+&lt;h4 id=&quot;使用package-manager这里选择sdkman&quot;&gt;使用package manager（这里选择SDKMAN!）&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;打开终端输入&lt;code class=&quot;highlighter-rouge&quot;&gt;$ curl -s &quot;https://get.sdkman.io&quot; | bash&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;sdk version&lt;/code&gt;查看是否成功&lt;/li&gt;
+  &lt;li&gt;重新打开终端输入&lt;code class=&quot;highlighter-rouge&quot;&gt;sdk install gradle x.x&lt;/code&gt;即可
+    &lt;blockquote&gt;
+      &lt;p&gt;有多种安装方式，我这里选择我认为比较简洁和舒服的方式，肯定不唯一&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;安装postman&quot;&gt;安装Postman&lt;/h1&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://dl.pstmn.io/download/latest/linux64 &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; postman.tar.gz &lt;span class=&quot;c&quot;&gt;#命令行下载最新版postman&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;mv postman.tar.gz /opt &lt;span class=&quot;c&quot;&gt;#移动至软件文件夹&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-xzf&lt;/span&gt; postman.tar.gz &lt;span class=&quot;c&quot;&gt;#解压&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ln &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /opt/Postman/Postman /usr/bin/postman &lt;span class=&quot;c&quot;&gt;#加入环境变量&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;这里不制作启动项了，直接通过终端输入&lt;code class=&quot;highlighter-rouge&quot;&gt;postman&lt;/code&gt;即可启动&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;安装mongodb&quot;&gt;安装MongoDB&lt;/h1&gt;
+&lt;h4 id=&quot;安装&quot;&gt;安装&lt;/h4&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update &lt;span class=&quot;c&quot;&gt;#更新源&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt install &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; mongodb &lt;span class=&quot;c&quot;&gt;#ubuntu仓库里有最新稳定版MongoDB，所以可以直接命令行安装&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;管理&quot;&gt;管理&lt;/h4&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl status mongodb &lt;span class=&quot;c&quot;&gt;#查看mogodb状态&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl stop mongodb &lt;span class=&quot;c&quot;&gt;#停止服务&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl start mongodb &lt;span class=&quot;c&quot;&gt;#启动服务&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl restart mongodb &lt;span class=&quot;c&quot;&gt;#重启服务&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl disable mongodb &lt;span class=&quot;c&quot;&gt;#禁止自动启动&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;mongodb &lt;span class=&quot;c&quot;&gt;#启用自动启动&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;systemctl 为Systemd命令，Systemd 是 Linux 系统工具，用来启动守护进程，已成为大多数发行版的标准配置。参考&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html&quot;&gt;这篇教程&lt;/a&gt;
+和&lt;a href=&quot;https://huur.cn/course/yw/1712.html&quot;&gt;这篇文章&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;基本操作&quot;&gt;基本操作&lt;/h4&gt;
+&lt;h5 id=&quot;添加管理员账户&quot;&gt;添加管理员账户&lt;/h5&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;use admin &lt;span class=&quot;c&quot;&gt;#进入admin数据库&lt;/span&gt;
+
+db.createUser&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    user: &lt;span class=&quot;s2&quot;&gt;&quot;root&quot;&lt;/span&gt;,
+    &lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;: &lt;span class=&quot;s2&quot;&gt;&quot;root2333&quot;&lt;/span&gt;,
+    roles: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; role: &lt;span class=&quot;s2&quot;&gt;&quot;userAdminAnyDatabase&quot;&lt;/span&gt;, db: &lt;span class=&quot;s2&quot;&gt;&quot;admin&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;role说明&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;read：允许用户读取指定数据库&lt;/li&gt;
+  &lt;li&gt;readWrite：允许用户读写指定数据库&lt;/li&gt;
+  &lt;li&gt;dbAdmin：允许用户在指定数据库中执行管理函数，如索引创建、删除，查看统计或访问system.profile&lt;/li&gt;
+  &lt;li&gt;userAdmin：允许用户向system.users集合写入，可以找指定数据库里创建、删除和管理用户&lt;/li&gt;
+  &lt;li&gt;clusterAdmin：只在admin数据库中可用，赋予用户所有分片和复制集相关函数的管理权限。&lt;/li&gt;
+  &lt;li&gt;readAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读权限&lt;/li&gt;
+  &lt;li&gt;readWriteAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读写权限&lt;/li&gt;
+  &lt;li&gt;userAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的userAdmin权限&lt;/li&gt;
+  &lt;li&gt;dbAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的dbAdmin权限。&lt;/li&gt;
+  &lt;li&gt;root：只在admin数据库中可用。超级账号，超级权限&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;修改用户密码&quot;&gt;修改用户密码&lt;/h5&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;db.changeUserPassword&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tank2'&lt;/span&gt;,&lt;span class=&quot;s1&quot;&gt;'test'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h5 id=&quot;创建或者使用数据库&quot;&gt;创建或者使用数据库&lt;/h5&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;use &lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#有test数据库则切换至test，否则创建并切换至test&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="ubuntu" /><category term="linux" /><summary>查看系统架构
+uname -a #几乎所有 Linux/Unix 系统
+dpkg --print-architecture #只适用于基于 Debian 和 Ubuntu 的 Linux 发行版</summary></entry><entry><title>StudySchedule</title><link href="http://localhost:4000/StudySchedule/" rel="alternate" type="text/html" title="StudySchedule" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/StudySchedule</id><content type="html" xml:base="http://localhost:4000/StudySchedule/">&lt;h1 id=&quot;内功修炼进度&quot;&gt;内功修炼进度&lt;/h1&gt;
+
+&lt;h2 id=&quot;编译原理&quot;&gt;编译原理&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;编译原理&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;序号&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;名称&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;来源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;当前进度&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;传送门&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;时间&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;编译原理（哈工大）&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;中国大学慕课&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;程序设计语言及其文法&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.icourse163.org/learn/HIT-1002123007?tid=1002655021#/learn/content?type=detail&amp;amp;id=1003771333&amp;amp;sm=1&quot;&gt;✈&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018-7-26 11:07:14&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;算法&quot;&gt;算法&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;算法内功必须得深厚→_→&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;序号0&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;名称&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;来源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;当前进度&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;传送门&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;时间&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;算法练习&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;LeetCode&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;算法基础&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/29/&quot;&gt;✈&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018-7-26 11:07:14&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;底层&quot;&gt;底层&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;一些硬件相关知识&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;序号&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;名称&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;来源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;当前进度&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;传送门&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;时间&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;计算机组成原理&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;中国大学慕课&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;计算机系统概论&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.icourse163.org/learn/HIT-309001?tid=360004#/learn/content?type=detail&amp;amp;id=854160&amp;amp;cid=943774&amp;amp;replay=true&quot;&gt;✈&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018-7-26 15:23:40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;电路&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;中国大学慕课&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;电路模型和电路定律&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.icourse163.org/learn/XJTU-47024?tid=1002791005#/learn/content?type=detail&amp;amp;id=1003839534&quot;&gt;✈&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018-7-26 13:54:27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;操作系统&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;中国大学慕课&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;计算机操作系统概述（上）&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.icourse163.org/learn/NJU-1001571004?tid=1002784135#/learn/content?type=detail&amp;amp;id=1004022003&quot;&gt;✈&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018-7-26 13:54:27&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;语言&quot;&gt;语言&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;一些个人认为比较值得学习的语言&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;序号&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;名称&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;来源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;当前进度&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;传送门&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;时间&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Rust 程序设计语言&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;GitHub&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;泛型、trait 和生命周期&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://kaisery.github.io/trpl-zh-cn/ch10-00-generics.html#a泛型trait-和生命周期&quot;&gt;✈&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018-7-26 13:54:27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RustPrimer&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;GitBooks&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Rust旅程&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://rustcc.gitbooks.io/rustprimer/content/quickstart/rust-travel.html&quot;&gt;✈&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018-7-26 13:54:27&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><category term="计划" /><summary>内功修炼进度</summary></entry><entry><title>Linux Common</title><link href="http://localhost:4000/Linux-Common/" rel="alternate" type="text/html" title="Linux Common" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/Linux-Common</id><content type="html" xml:base="http://localhost:4000/Linux-Common/">&lt;h1 id=&quot;端口-相关&quot;&gt;端口 相关&lt;/h1&gt;
+&lt;h2 id=&quot;端口占用&quot;&gt;端口占用&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 找出占用端口pid
+sudo lsof -i:port
+# 结束进程
+sudo kill -9 pid
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;软件源&quot;&gt;软件源&lt;/h1&gt;
+&lt;h2 id=&quot;管理&quot;&gt;管理&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vim /etc/apt/sources.list　　
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><category term="系统管理" /><category term="linux" /><summary>端口 相关
+端口占用
+# 找出占用端口pid
+sudo lsof -i:port
+# 结束进程
+sudo kill -9 pid</summary></entry><entry><title>Kubernets</title><link href="http://localhost:4000/Kubernetes/" rel="alternate" type="text/html" title="Kubernets" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/Kubernetes</id><content type="html" xml:base="http://localhost:4000/Kubernetes/">&lt;h1 id=&quot;常用命令&quot;&gt;常用命令&lt;/h1&gt;
+&lt;p&gt;|功能|命令|说明|
+|:—:|:—|:—:|
+|查看日志|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl logs -f &amp;lt;pod_name&amp;gt; -c &amp;lt;container_name&amp;gt;&lt;/code&gt;|&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt;: 类似于tail -f|&lt;/p&gt;
+
+&lt;h1 id=&quot;系统命令&quot;&gt;系统命令&lt;/h1&gt;
+&lt;p&gt;|功能|命令|说明|
+|:—:|:—|:—:|
+|查看当前配置|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config view&lt;/code&gt;|无|
+|新增上下文|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config set-context &amp;lt;context_name&amp;gt; --namespace=&amp;lt;namespace_in_context&amp;gt; --cluster=&amp;lt;cluster_name&amp;gt; --user=&amp;lt;user_name&amp;gt;&lt;/code&gt;|无|
+|删除上下文|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config delete-context &amp;lt;context_name&amp;gt;&lt;/code&gt;|无|
+|切换上下文|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config use-context &amp;lt;context_name&amp;gt;&lt;/code&gt;|&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;context_name&amp;gt;&lt;/code&gt;: 上下文名称|
+|查看当前生效的上下文|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config current-context&lt;/code&gt;|无|
+|修改默认命名空间|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config set-context --current --namespace=&amp;lt;namespace_name&amp;gt;&lt;/code&gt;|&lt;code class=&quot;highlighter-rouge&quot;&gt;--current&lt;/code&gt;: 设置当前上下文默认命名空间，换成其他上下文名称同理|&lt;/p&gt;
+
+&lt;h1 id=&quot;发行版&quot;&gt;发行版&lt;/h1&gt;
+&lt;h2 id=&quot;k3s&quot;&gt;k3s&lt;/h2&gt;
+&lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
+&lt;p&gt;官网已提供完整的安装说明，支持在线和离线方式。&lt;br /&gt;
+&lt;a href=&quot;https://docs.rancher.cn/k3s/&quot;&gt;国内&lt;/a&gt; | &lt;a href=&quot;https://rancher.com/docs/k3s/latest/en/quick-start/&quot;&gt;普通&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;注意事项&quot;&gt;注意事项&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;安装时指定&lt;code class=&quot;highlighter-rouge&quot;&gt;export INSTALL_K3S_EXEC=&quot;--write-kubeconfig ~/.kube/config --write-kubeconfig-mode 666&quot;&lt;/code&gt;以修改默认配置文件位置和文件访问权限&lt;/li&gt;
+&lt;/ul&gt;</content><category term="kubernets" /><category term="k8s" /><category term="云计算" /><summary>常用命令
+|功能|命令|说明|
+|:—:|:—|:—:|
+|查看日志|kubectl logs -f &amp;lt;pod_name&amp;gt; -c &amp;lt;container_name&amp;gt;|-f: 类似于tail -f|</summary></entry><entry><title>GitBook</title><link href="http://localhost:4000/GitBook/" rel="alternate" type="text/html" title="GitBook" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/GitBook</id><content type="html" xml:base="http://localhost:4000/GitBook/">&lt;h3 id=&quot;切换分支&quot;&gt;切换分支&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout xxx　# 切换到xxx分支&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;如果xxx是文件或者文件夹的话意义大不相同&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;创建分支&quot;&gt;创建分支&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch xxx &lt;span class=&quot;c&quot;&gt;# 创建xxx后并不会切换到该分支&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;创建分支并推送到远程&quot;&gt;创建分支并推送到远程&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; xxx &lt;span class=&quot;c&quot;&gt;# 相当于git branch xxx和git checkout xxx的合体&lt;/span&gt;
+git push origin xxx&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;本地分支&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:xxx&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;远程分支&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;删除分支&quot;&gt;删除分支&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; xxx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;删除远程分支&quot;&gt;删除远程分支&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &lt;span class=&quot;nt&quot;&gt;--delete&lt;/span&gt; xxx &lt;span class=&quot;c&quot;&gt;# 常规做法&lt;/span&gt;
+
+git push orgin :xxx &lt;span class=&quot;c&quot;&gt;# 简单写法，相当于推送一个空分支到远程分支&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;重命名分支&quot;&gt;重命名分支&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; oldxxx newxxx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;查看本地分支对应的远程分支&quot;&gt;查看本地分支对应的远程分支&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-vv&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;本地库直接关联远程库并提交&quot;&gt;本地库直接关联远程库并提交&lt;/h1&gt;
+&lt;p&gt;初始化本地项目为git仓库&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;添加所有需要提交的项目&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;初始提交&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;xxx&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;添加远程库&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add remote origin&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;不用管别的就写这个&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 仓库地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;fetch远程库&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch origin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;pull相关分支&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin 分支 &lt;span class=&quot;c&quot;&gt;#需要--allow-unrelated-histories&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;push相关分支&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;可能会报错，但一般会直接在命令行进行提示，照着做即可&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="git" /><summary>切换分支
+git checkout xxx　# 切换到xxx分支(如果xxx是文件或者文件夹的话意义大不相同)</summary></entry><entry><title>DevMemento</title><link href="http://localhost:4000/DevMemento/" rel="alternate" type="text/html" title="DevMemento" /><published>2020-05-04T00:00:00+08:00</published><updated>2020-05-04T00:00:00+08:00</updated><id>http://localhost:4000/DevMemento</id><content type="html" xml:base="http://localhost:4000/DevMemento/">&lt;h1 id=&quot;nodejs&quot;&gt;NodeJS&lt;/h1&gt;
+&lt;h3 id=&quot;nrm&quot;&gt;nrm&lt;/h3&gt;
+&lt;p&gt;管理registry地址小工具&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g nrm //全局安装
+nrm add 镜像名称 镜像地址 //添加镜像
+nrm ls //查看镜像列表
+nrm use 镜像名称 //切换镜像
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;npm-run-serve错误集合&quot;&gt;npm run serve错误集合&lt;/h2&gt;
+&lt;h3 id=&quot;system-limit-for-number-of-file-watchers-reached&quot;&gt;System limit for number of file watchers reached&lt;/h3&gt;
+&lt;p&gt;方案&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;fs.inotify.max_user_watches&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;524288 | &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;tee &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; /etc/sysctl.conf &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sysctl &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;sysctl &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;kotlin与java混编&quot;&gt;Kotlin与Java混编&lt;/h1&gt;
+&lt;h2 id=&quot;maven-compile失败&quot;&gt;maven compile失败&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;执行&lt;code class=&quot;highlighter-rouge&quot;&gt;mvn clean kotlin:compile package -Dmaven.test.skip=true&lt;/code&gt;。&lt;/li&gt;
+  &lt;li&gt;继续执行mvn compile&lt;/li&gt;
+&lt;/ol&gt;</content><category term="npm" /><category term="maven" /><category term="kotlin" /><category term="java" /><summary>NodeJS
+nrm
+管理registry地址小工具
+npm install -g nrm //全局安装
+nrm add 镜像名称 镜像地址 //添加镜像
+nrm ls //查看镜像列表
+nrm use 镜像名称 //切换镜像</summary></entry><entry><title>Deepin</title><link href="http://localhost:4000/Deepin/" rel="alternate" type="text/html" title="Deepin" /><published>2020-05-04T00:00:00+08:00</published><updated>2020-05-04T00:00:00+08:00</updated><id>http://localhost:4000/Deepin</id><content type="html" xml:base="http://localhost:4000/Deepin/">&lt;h1 id=&quot;deepin安装&quot;&gt;Deepin安装&lt;/h1&gt;
+&lt;h2 id=&quot;进入系统后一直加载&quot;&gt;进入系统后一直加载&lt;/h2&gt;
+&lt;h3 id=&quot;第一次安装临时解决方案&quot;&gt;第一次安装临时解决方案&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;开机后进入选择页面，不要enter，按e&lt;/li&gt;
+  &lt;li&gt;在倒数第二行添加&lt;code class=&quot;highlighter-rouge&quot;&gt;nouveau.modeset=0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;按F10
+    &lt;h3 id=&quot;进入系统后暂时永久性的解决方案&quot;&gt;进入系统后暂时永久性的解决方案&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ctrl + alt + t打开终端界面，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo gedit /boot/grub/grub.cfg&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;按ctrl + F找到第一个quiet，在其后输入&lt;code class=&quot;highlighter-rouge&quot;&gt;nouveau.modeset=0&lt;/code&gt;，保存退出&lt;/li&gt;
+  &lt;li&gt;重启查看效果&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dde-dock相关&quot;&gt;dde-dock相关&lt;/h2&gt;
+&lt;h3 id=&quot;dde-dock异常&quot;&gt;dde-dock异常&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 强行重启dde-dock&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;killall dde-dock
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;deepin安装jdk&quot;&gt;Deepin安装JDK&lt;/h1&gt;
+&lt;h2 id=&quot;添加java-8-oracle源复制到终端运行&quot;&gt;添加Java-8-Oracle源，复制到终端运行&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo su -
+echo &quot;deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main&quot; | tee -a /etc/apt/sources.list
+echo &quot;deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main&quot; | tee -a /etc/apt/sources.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
+apt-get update
+exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;更新软件列表&quot;&gt;更新软件列表&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;执行安装命令&quot;&gt;执行安装命令&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install oracle-java8-installer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;错误处理&quot;&gt;错误处理&lt;/h1&gt;
+&lt;h2 id=&quot;安装软件或者检查系统升级出现dependency-error&quot;&gt;安装软件或者检查系统升级出现Dependency error&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt full-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;进程管理&quot;&gt;进程管理&lt;/h1&gt;
+&lt;h2 id=&quot;查看指定端口进程&quot;&gt;查看指定端口进程&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;netstat -nap | grep xxx(端口号)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;结束进程&quot;&gt;结束进程&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kill xxx(pid)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;安装openresty&quot;&gt;安装Openresty&lt;/h1&gt;
+&lt;h2 id=&quot;下载最新源码包&quot;&gt;&lt;a href=&quot;https://openresty.org/cn/download.html&quot;&gt;下载最新源码包&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://openresty.org/download/openresty-x.xx.x.x.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;解压源码包&quot;&gt;解压源码包&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar -xzvf openresty-x.xx.x.x.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;配置&quot;&gt;配置&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 进入openresty-x.xx.x.x
+cd openresty-x.xx.x.x
+
+# 配置
+./configure --prefix=/opt/openresty \ # 安装路径
+            --with-luajit # 添加lua即时编译
+            # 其他配置自行查阅
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;安装&quot;&gt;安装&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make
+make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;docker&quot;&gt;Docker&lt;/h1&gt;
+&lt;h3 id=&quot;创建docker组&quot;&gt;创建docker组&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo groupadd docker&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;将用户添加到docker组里&quot;&gt;将用户添加到docker组里&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo usermod -aG docker $USER  # 这里的$USER是你自己的用户名
+awk -F &quot;:&quot; '/docker/{print $4}' /etc/group # 查看是否添加成功
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;注销你的账户以便让你的用户权限生效&quot;&gt;注销你的账户,以便让你的用户权限生效&lt;/h3&gt;
+&lt;h3 id=&quot;测试你的用户权限是否生效&quot;&gt;测试你的用户权限是否生效&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker -v&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;文件管理器与vscode快捷键冲突&quot;&gt;文件管理器与vscode快捷键冲突&lt;/h1&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xdg-mime default dde-file-manager.desktop inode/directory&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;vim&quot;&gt;Vim&lt;/h1&gt;
+&lt;p&gt;|操作|命令|
+|:—:|:—:|
+|复制整行|yy|
+|复制多行|nyy(n为行数，下同)|
+|从光标处粘贴|p|
+|复制内容到系统粘贴板|”+y|
+|从系统粘贴板粘贴内容|”+p|
+|删除整行|dd|
+|删除多行|ndd|&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;操作系统粘贴板需要查看(输入&lt;code class=&quot;highlighter-rouge&quot;&gt;:version&lt;/code&gt;命令)当前vim是否支持相应的寄存器，不支持的话需要&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install vim-gnome&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;virtualbox&quot;&gt;VirtualBox&lt;/h1&gt;
+&lt;h2 id=&quot;安装-1&quot;&gt;安装&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;执行&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo vim /etc/apt/sources.list&lt;/code&gt;添加源&lt;code class=&quot;highlighter-rouge&quot;&gt;deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian 发行版代号 contrib&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;执行&lt;code class=&quot;highlighter-rouge&quot;&gt;wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;执行&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get update&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;执行&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install virtualbox-x.x&lt;/code&gt;安装相应版本&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;后续升级只需执行最后一步即可&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;共享文件夹问题&quot;&gt;共享文件夹问题&lt;/h2&gt;
+&lt;h3 id=&quot;内部系统无权访问共享文件夹&quot;&gt;内部系统无权访问共享文件夹&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; vboxsf 用户名
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;若仍然提示无权限，请确定你增强工具是否已经安装&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;常用软件安装&quot;&gt;常用软件安装&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;安装QQ&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install deepin.com.qq.im
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;安装微信&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install deepin.com.wechat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;需要注意的是，通常情况下&lt;strong&gt;微信&lt;/strong&gt;和&lt;strong&gt;QQ&lt;/strong&gt;在应用商店都是能够搜到的，但某些情况下会无法搜索到相应应用，此时可以使用上述方式进行安装．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;更新依赖库&quot;&gt;更新依赖库&lt;/h1&gt;
+&lt;h2 id=&quot;deepin-1511&quot;&gt;deepin 15.11&lt;/h2&gt;
+&lt;h3 id=&quot;glibc&quot;&gt;GLIBC&lt;/h3&gt;
+&lt;p&gt;15.11中的GLIBC版本最高为GLIBC_2.24，需要更高版本的GLIBC可执行如下操作&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 添加包含高版本GLIBC的源，以debian buster为例&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;vim /etc/apt/sources.list.d/buster.list
+&lt;span class=&quot;c&quot;&gt;# 添加此内容 deb http://ftp.debian.org/debian buster main 后执行如下命令&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;c&quot;&gt;# 不需要 upgrade 直接执行如下命令&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; buster install libc6 libc6-dev libc6-dbg
+&lt;span class=&quot;c&quot;&gt;# 查看升级后的版本&lt;/span&gt;
+strings /lib/x86_64-linux-gnu/libc.so.6 | &lt;span class=&quot;nb&quot;&gt;grep &lt;/span&gt;GLIBC
+&lt;span class=&quot;c&quot;&gt;# 升级完成后移除相应源&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rm /etc/apt/sources.list.d/buster.list 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;路径&quot;&gt;路径&lt;/h1&gt;
+&lt;h2 id=&quot;缩短显示路径&quot;&gt;缩短显示路径&lt;/h2&gt;
+&lt;p&gt;vim打开&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;，找到如下代码：&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$color_prompt&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; yes &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+  &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PS1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else
+  &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PS1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;修改为：&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$color_prompt&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; yes &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+  &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PS1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else
+  &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PS1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;将&lt;code class=&quot;highlighter-rouge&quot;&gt;\w&lt;/code&gt;修改为&lt;code class=&quot;highlighter-rouge&quot;&gt;\W&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="linux" /><category term="deepin" /><summary>Deepin安装
+进入系统后一直加载
+第一次安装临时解决方案
+
+  开机后进入选择页面，不要enter，按e
+  在倒数第二行添加nouveau.modeset=0
+  按F10
+    进入系统后暂时永久性的解决方案
+  
+  ctrl + alt + t打开终端界面，输入sudo gedit /boot/grub/grub.cfg
+  按ctrl + F找到第一个quiet，在其后输入nouveau.modeset=0，保存退出
+  重启查看效果</summary></entry></feed>

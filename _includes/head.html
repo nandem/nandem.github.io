@@ -13,16 +13,7 @@
   <meta name="description" content="{{ site.description }}">
   {% endif %}
   {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-  <!-- Twitter Cards -->
-  {% if page.image %}{% capture image %}{{ page.image }}{% endcapture %}{% unless image contains 'http://' or image contains 'https://' %}{% capture image %}{{ site.url }}/{{ image }}{% endcapture %}{% endunless %}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ image }}">
-  {% else %}<meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="{{ site.logo }}">{% endif %}
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  {% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-  {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">
-  <meta name="twitter:creator" content="@{{ site.twitter }}">{% endif %}
+  
   <!-- Open Graph -->
   <meta property="og:locale" content="{{ site.locale }}">
   <meta property="og:type" content="article">
@@ -60,5 +51,43 @@
   <style type="text/css">
     #posts .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.post-list }}) no-repeat;background-size: cover, cover;}
     .block-left {background: linear-gradient(rgba(44,45,51,0.9), rgba(44,45,51,0.9)), url({{ site.url }}/{{ site.background.homepage }}) no-repeat;background-size: cover;}
+
+
+        .nui-scroll{
+            overflow: auto;
+        }
+        .nui-scroll::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        /*正常情况下滑块的样式*/
+        .nui-scroll::-webkit-scrollbar-thumb {
+            background-color: rgba(0,0,0,.05);
+            border-radius: 10px;
+            -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+        }
+        /*鼠标悬浮在该类指向的控件上时滑块的样式*/
+        .nui-scroll:hover::-webkit-scrollbar-thumb {
+            background-color: rgba(0,0,0,.2);
+            border-radius: 10px;
+            -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+        }
+        /*鼠标悬浮在滑块上时滑块的样式*/
+        .nui-scroll::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(0,0,0,.4);
+            -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+        }
+        /*正常时候的主干部分*/
+        .nui-scroll::-webkit-scrollbar-track {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+            background-color: white;
+        }
+        /*鼠标悬浮在滚动条上的主干部分*/
+        .nui-scroll::-webkit-scrollbar-track:hover {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.4);
+            background-color: rgba(0,0,0,.01);
+        }
+
   </style>
 </head>

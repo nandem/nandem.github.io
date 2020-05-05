@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Windows About"
+categories:
+  - Windows Case
+tags:
+  - windows
+---
+
 # 无法安装
 - 修复计算机=>命令行
 - 输入`diskpart`进入diskpart模式

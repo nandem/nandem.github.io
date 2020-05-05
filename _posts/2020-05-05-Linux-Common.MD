@@ -1,3 +1,13 @@
+---
+layout: post
+title: "Linux Common"
+categories:
+  - Linux
+tags:
+  - 系统管理
+  - linux
+---
+
 # 端口 相关
 ## 端口占用
 ```

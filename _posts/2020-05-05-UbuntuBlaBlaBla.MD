@@ -1,3 +1,13 @@
+---
+layout: post
+title: "Ubuntu"
+categories:
+  - Ubuntu
+tags:
+  - ubuntu
+  - linux
+---
+
 # 查看系统架构
 ```bash
 uname -a #几乎所有 Linux/Unix 系统

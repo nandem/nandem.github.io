@@ -1,3 +1,12 @@
+---
+layout: post
+title: "StudySchedule"
+categories:
+  - 学习进度
+tags:
+  - 计划
+---
+
 # 内功修炼进度
 
 ## 编译原理 

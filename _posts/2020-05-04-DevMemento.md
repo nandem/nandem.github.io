@@ -1,3 +1,15 @@
+---
+layout: post
+title: "DevMemento"
+categories:
+  - Dev
+tags:
+  - npm
+  - maven
+  - kotlin
+  - java
+---
+
 # NodeJS
 ### nrm
 管理registry地址小工具
