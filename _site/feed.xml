@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-05T12:49:03+08:00</updated><id>http://localhost:4000/</id><title>摸猫鼻子吗</title><subtitle>向来心是看客心，奈何人是剧中人。</subtitle><entry><title>Windows About</title><link href="http://localhost:4000/WindowsBlaBlaBla/" rel="alternate" type="text/html" title="Windows About" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/WindowsBlaBlaBla</id><content type="html" xml:base="http://localhost:4000/WindowsBlaBlaBla/">&lt;h1 id=&quot;无法安装&quot;&gt;无法安装&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-05T13:03:55+08:00</updated><id>http://localhost:4000/</id><title>摸猫鼻子吗</title><subtitle>向来心是看客心，奈何人是剧中人。</subtitle><entry><title>Windows About</title><link href="http://localhost:4000/WindowsBlaBlaBla/" rel="alternate" type="text/html" title="Windows About" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/WindowsBlaBlaBla</id><content type="html" xml:base="http://localhost:4000/WindowsBlaBlaBla/">&lt;h1 id=&quot;无法安装&quot;&gt;无法安装&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;修复计算机=&amp;gt;命令行&lt;/li&gt;
   &lt;li&gt;输入&lt;code class=&quot;highlighter-rouge&quot;&gt;diskpart&lt;/code&gt;进入diskpart模式&lt;/li&gt;
@@ -364,34 +364,79 @@ sudo kill -9 pid
 # 找出占用端口pid
 sudo lsof -i:port
 # 结束进程
-sudo kill -9 pid</summary></entry><entry><title>Kubernets</title><link href="http://localhost:4000/Kubernetes/" rel="alternate" type="text/html" title="Kubernets" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/Kubernetes</id><content type="html" xml:base="http://localhost:4000/Kubernetes/">&lt;h1 id=&quot;常用命令&quot;&gt;常用命令&lt;/h1&gt;
-&lt;p&gt;|功能|命令|说明|
-|:—:|:—|:—:|
-|查看日志|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl logs -f &amp;lt;pod_name&amp;gt; -c &amp;lt;container_name&amp;gt;&lt;/code&gt;|&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt;: 类似于tail -f|&lt;/p&gt;
+sudo kill -9 pid</summary></entry><entry><title>Kubernets</title><link href="http://localhost:4000/Kubernetes/" rel="alternate" type="text/html" title="Kubernets" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/Kubernetes</id><content type="html" xml:base="http://localhost:4000/Kubernetes/">&lt;h2 id=&quot;常用命令&quot;&gt;常用命令&lt;/h2&gt;
 
-&lt;h1 id=&quot;系统命令&quot;&gt;系统命令&lt;/h1&gt;
-&lt;p&gt;|功能|命令|说明|
-|:—:|:—|:—:|
-|查看当前配置|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config view&lt;/code&gt;|无|
-|新增上下文|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config set-context &amp;lt;context_name&amp;gt; --namespace=&amp;lt;namespace_in_context&amp;gt; --cluster=&amp;lt;cluster_name&amp;gt; --user=&amp;lt;user_name&amp;gt;&lt;/code&gt;|无|
-|删除上下文|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config delete-context &amp;lt;context_name&amp;gt;&lt;/code&gt;|无|
-|切换上下文|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config use-context &amp;lt;context_name&amp;gt;&lt;/code&gt;|&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;context_name&amp;gt;&lt;/code&gt;: 上下文名称|
-|查看当前生效的上下文|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config current-context&lt;/code&gt;|无|
-|修改默认命名空间|&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config set-context --current --namespace=&amp;lt;namespace_name&amp;gt;&lt;/code&gt;|&lt;code class=&quot;highlighter-rouge&quot;&gt;--current&lt;/code&gt;: 设置当前上下文默认命名空间，换成其他上下文名称同理|&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;功能&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;命令&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;查看日志&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl logs -f &amp;lt;pod_name&amp;gt; -c &amp;lt;container_name&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt;: 类似于tail -f&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;h1 id=&quot;发行版&quot;&gt;发行版&lt;/h1&gt;
-&lt;h2 id=&quot;k3s&quot;&gt;k3s&lt;/h2&gt;
-&lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
+&lt;h2 id=&quot;系统命令&quot;&gt;系统命令&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;功能&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;命令&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;查看当前配置&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config view&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;新增上下文&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config set-context &amp;lt;context_name&amp;gt; --namespace=&amp;lt;namespace_in_context&amp;gt; --cluster=&amp;lt;cluster_name&amp;gt; --user=&amp;lt;user_name&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;删除上下文&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config delete-context &amp;lt;context_name&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;切换上下文&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config use-context &amp;lt;context_name&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;context_name&amp;gt;&lt;/code&gt;: 上下文名称&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;查看当前生效的上下文&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config current-context&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;无&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;修改默认命名空间&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl config set-context --current --namespace=&amp;lt;namespace_name&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--current&lt;/code&gt;: 设置当前上下文默认命名空间，换成其他上下文名称同理&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;发行版&quot;&gt;发行版&lt;/h2&gt;
+&lt;h3 id=&quot;k3s&quot;&gt;k3s&lt;/h3&gt;
+&lt;h4 id=&quot;安装&quot;&gt;安装&lt;/h4&gt;
 &lt;p&gt;官网已提供完整的安装说明，支持在线和离线方式。&lt;br /&gt;
 &lt;a href=&quot;https://docs.rancher.cn/k3s/&quot;&gt;国内&lt;/a&gt; | &lt;a href=&quot;https://rancher.com/docs/k3s/latest/en/quick-start/&quot;&gt;普通&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;注意事项&quot;&gt;注意事项&lt;/h3&gt;
+&lt;h4 id=&quot;注意事项&quot;&gt;注意事项&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;安装时指定&lt;code class=&quot;highlighter-rouge&quot;&gt;export INSTALL_K3S_EXEC=&quot;--write-kubeconfig ~/.kube/config --write-kubeconfig-mode 666&quot;&lt;/code&gt;以修改默认配置文件位置和文件访问权限&lt;/li&gt;
-&lt;/ul&gt;</content><category term="kubernets" /><category term="k8s" /><category term="云计算" /><summary>常用命令
-|功能|命令|说明|
-|:—:|:—|:—:|
-|查看日志|kubectl logs -f &amp;lt;pod_name&amp;gt; -c &amp;lt;container_name&amp;gt;|-f: 类似于tail -f|</summary></entry><entry><title>GitBook</title><link href="http://localhost:4000/GitBook/" rel="alternate" type="text/html" title="GitBook" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/GitBook</id><content type="html" xml:base="http://localhost:4000/GitBook/">&lt;h3 id=&quot;切换分支&quot;&gt;切换分支&lt;/h3&gt;
+&lt;/ul&gt;</content><category term="kubernets" /><category term="k8s" /><category term="云计算" /><summary>常用命令</summary></entry><entry><title>GitBook</title><link href="http://localhost:4000/GitBook/" rel="alternate" type="text/html" title="GitBook" /><published>2020-05-05T00:00:00+08:00</published><updated>2020-05-05T00:00:00+08:00</updated><id>http://localhost:4000/GitBook</id><content type="html" xml:base="http://localhost:4000/GitBook/">&lt;h3 id=&quot;切换分支&quot;&gt;切换分支&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout xxx　# 切换到xxx分支&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;如果xxx是文件或者文件夹的话意义大不相同&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
