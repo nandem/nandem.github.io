@@ -10,6 +10,13 @@ tags:
   - java
 ---
 
+# JDK
+### Deepin,Debian,Ubuntu
+```bash
+sudo apt install openjdk-8-jdk # jdk
+sudo apt install openjdk-8-jre # jre
+```
+
 # NodeJS
 ### nrm
 管理registry地址小工具
