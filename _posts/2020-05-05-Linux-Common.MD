@@ -8,8 +8,8 @@ tags:
   - linux
 ---
 
-# 端口 相关
-## 端口占用
+### 端口 相关
+#### 端口占用
 ```
 # 找出占用端口pid
 sudo lsof -i:port
@@ -17,8 +17,8 @@ sudo lsof -i:port
 sudo kill -9 pid
 ```
 
-# 软件源
-## 管理
+### 软件源
+#### 管理
 ```
 sudo vim /etc/apt/sources.list　　
 ```
