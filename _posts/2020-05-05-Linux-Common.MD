@@ -46,3 +46,14 @@ deb-src http://xxx.xxx.xxx/ubuntu bionic-security universe
 sudo sed -i 's/xxx\.xxx\.xxx/aaa\.bbb\.ccc/g' /etc/apt/sources.list
 ```
 > 进行操作前最好将 /etc/apt/sources.list 进行备份
+
+#### 错误处理
+- ```sudo apt update``` 报如下错误
+```bash
+E: Could not get lock /var/lib/apt/lists/lock. It is held by process 1532 (packagekitd)
+N: Be aware that removing the lock file is not a solution and may break your system.
+```
+最好不要删除文件。执行以下命令大概率即可解决问题
+```bash
+sudo fuser -vki /var/lib/apt/lists/lock
+```
