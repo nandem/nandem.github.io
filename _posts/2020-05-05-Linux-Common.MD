@@ -106,3 +106,11 @@ N: Be aware that removing the lock file is not a solution and may break your sys
 ```bash
 sudo fuser -vki /var/lib/apt/lists/lock
 ```
+
+### 故障处理
+#### NIC Copper Link is Down
+参考解决方案
+- 执行网口点灯命令
+```shell
+netplan -p 网卡名
+```
