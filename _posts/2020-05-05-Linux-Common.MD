@@ -112,5 +112,5 @@ sudo fuser -vki /var/lib/apt/lists/lock
 参考解决方案
 - 执行网口点灯命令
 ```shell
-netplan -p 网卡名
+ethtool -p 网卡名
 ```
