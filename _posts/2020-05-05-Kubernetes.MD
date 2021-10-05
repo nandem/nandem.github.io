@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Kubernets"
+title: "Kubernetes"
 categories:
-  - Kubernets
+  - Kubernetes
 tags:
-  - kubernets
+  - Kubernetes
   - k8s
   - k3s
   - 云计算
