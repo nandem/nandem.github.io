@@ -129,9 +129,9 @@ ethtool -p 网卡名
 > 
 > 二、其次是开始进行扩容操作流程，登录服务器，执行下面的命令：
 > 
-> 1、apt-get update
-> 2、apt-get install -y cloud-guest-utils
-> 3、growpart /dev/vdb  1
-> 4、resize2fs /dev/vdb1
+> 1、apt-get update <br>
+> 2、apt-get install -y cloud-guest-utils <br>
+> 3、growpart /dev/vdb  1 <br>
+> 4、resize2fs /dev/vdb1 <br>
 > 
 > 三、最后扩容文档中有任何不了解的，或者扩容命令执行后有报错的，您随时工单反馈，这边协助您一起分析解决，谢谢
